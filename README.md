@@ -2,8 +2,6 @@
 
 ![E-Commerce MERN](https://github.com/user-attachments/assets/70356d55-f447-4152-ba89-7107b9be122a)
 
-A full-stack **E-Commerce web app** built using the **MERN stack (MongoDB, Express, React, Node.js)**.  
-Includes authentication, cart, product management, and admin dashboard.
 A lightweight task-prioritization system built using **Django + Vanilla JS**, scoring tasks based on urgency, importance, effort, and dependencies.
 
 ---
