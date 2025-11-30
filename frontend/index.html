@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task Analyzer — Frontend</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Smart Task Analyzer</h1>
+      <p class="muted">Paste tasks as JSON or add a single task — then Analyze.</p>
+    </header>
+
+    <section class="panel-grid">
+      <!-- LEFT: Inputs -->
+      <div class="panel input-panel">
+        <h2>Input</h2>
+
+        <details open>
+          <summary>Add single task</summary>
+          <form id="singleForm" class="form-small">
+            <label>Title<input id="title" type="text" placeholder="Fix login bug" /></label>
+            <label>Due date<input id="due_date" type="date" /></label>
+            <label>Estimated hours<input id="estimated_hours" type="number" min="0" value="1" /></label>
+            <label>Importance (1-10)<input id="importance" type="number" min="1" max="10" value="5" /></label>
+            <label>Dependencies (comma indices)<input id="dependencies" type="text" placeholder="e.g. 0,2" /></label>
+            <button id="addTaskBtn" type="button">Add to list →</button>
+          </form>
+        </details>
+
+        <details>
+          <summary>Bulk JSON (array)</summary>
+          <textarea id="taskInput" rows="10" placeholder='[{"title":"A","due_date":"2025-12-01",...}]'></textarea>
+        </details>
+
+        <div class="controls">
+          <label>Strategy
+            <select id="strategy">
+              <option value="smart">Smart Balance (score)</option>
+              <option value="fastest">Fastest Wins (low effort)</option>
+              <option value="impact">High Impact (importance)</option>
+              <option value="deadline">Deadline Driven</option>
+            </select>
+          </label>
+
+          <label class="checkbox-inline">
+            <input id="useBackendWeights" type="checkbox" /> Send custom weights to backend
+          </label>
+
+          <div id="weightsBox" class="weights hidden">
+            <small>Optional weights (override defaults)</small>
+            <div class="weight-row">
+              <label>importance_mul <input id="w_importance_mul" type="number" value="5" /></label>
+              <label>quickwin_bonus <input id="w_quickwin" type="number" value="10" /></label>
+            </div>
+            <div class="weight-row">
+              <label>urgency_overdue <input id="w_overdue" type="number" value="100" /></label>
+              <label>urgency_due_3 <input id="w_due3" type="number" value="50" /></label>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button id="analyzeBtn" class="primary">Analyze Tasks</button>
+            <button id="clearBtn" class="ghost">Clear</button>
+            
+          </div>
+        </div>
+
+        <div class="task-list-box">
+          <h3>Current task list</h3>
+          <ol id="currentTasks"></ol>
+        </div>
+      </div>
+
+      <!-- RIGHT: Results -->
+      <div class="panel results-panel">
+        <h2>Results</h2>
+        <div id="results"></div>
+        
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
