@@ -1,6 +1,6 @@
 // script.js
 (() => {
-  const API_ANALYZE = "http://127.0.0.1:8000/api/tasks/analyze/";
+  const API_ANALYZE = "https://sreejagunnam.pythonanywhere.com/api/tasks/analyze/";
 
   const els = {
     input: document.getElementById("taskInput"),
