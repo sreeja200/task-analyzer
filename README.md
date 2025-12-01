@@ -48,5 +48,22 @@ The scoring algorithm combines four key factors:
 Overdue tasks receive the highest boost. Tasks due in the next few days also get significant weight.
 Urgency is weighted more than effort because deadlines impose strict constraints.
 
+### Importance
+A user-defined score (1–10), multiplied by a weight to reflect impact.
 
+### Effort
+Quick tasks (<2 hours) receive a small bonus. Very long tasks receive a small penalty.
+
+### Dependencies
+Tasks that unblock other tasks receive additional points.
+
+### Core Logic Snippet
+
+```python
+if overdue: score += 100
+elif due_in_3_days: score += 50
+score += importance * 5
+if effort < 2: score += 10
+score += len(dependencies) * 3
+```
 
