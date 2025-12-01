@@ -66,4 +66,6 @@ score += importance * 5
 if effort < 2: score += 10
 score += len(dependencies) * 3
 ```
+Tasks are sorted by their final score in descending order.
 
+---
