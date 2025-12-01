@@ -30,6 +30,12 @@ venv\Scripts\activate    # Windows
 pip install -r requirements.txt
 python manage.py runserver
 ```
+
+### Frontend
+
+```bash
+frontend/index.html
+```
 ---
 
 ## 🚀 Live Demo
