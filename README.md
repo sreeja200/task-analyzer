@@ -21,6 +21,12 @@ A lightweight task-prioritization system built using **Django + Vanilla JS**, sc
 
 ---
 
+# 🎥 Demo Video
+
+▶️ [Watch the full demo](https://drive.google.com/file/d/1VFNxTda4tzpvzGZBNwsTjptFA6E_HL39/view?usp=drive_link)
+
+---
+
 ## 1. Setup Instructions
 
 ### Backend
