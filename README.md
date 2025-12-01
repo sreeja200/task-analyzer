@@ -86,4 +86,9 @@ Tasks are sorted by their final score in descending order.
 - Deployment — 30 mins
 - Debugging & Cleanup — 30 min
 
-
+## 5. Future Improvements
+- Eisenhower Matrix view
+- Weekend/holiday-aware urgency
+- Adaptive scoring based on user feedback
+- Dependency graph visualization
+- Unit tests for scoring logic
