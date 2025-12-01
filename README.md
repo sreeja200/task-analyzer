@@ -43,7 +43,11 @@ frontend/index.html
 
 ## 2. 🔌API Endpoints
 
-## 2. Algorithm Explanation
+### Task Analysis
+
+- POST /api/tasks/analyze/ - Analyze a list of tasks, calculate scores, sort them, and return explanations.
+
+## 3. Algorithm Explanation
 The scoring algorithm combines four key factors:
 
 ### Urgency
