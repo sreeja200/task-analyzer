@@ -1,6 +1,6 @@
 # 🎯 Smart Task Analyzer
 
-![E-Commerce MERN](https://github.com/user-attachments/assets/d7390e84-dfb1-44f9-8828-a3001a52e7c3)
+![Smart Task Analyzer](https://github.com/user-attachments/assets/d7390e84-dfb1-44f9-8828-a3001a52e7c3)
 
 A lightweight task-prioritization system built using **Django + Vanilla JS**, scoring tasks based on urgency, importance, effort, and dependencies.
 
