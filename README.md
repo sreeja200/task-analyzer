@@ -41,6 +41,12 @@ frontend/index.html
 ```
 ---
 
-## 🚀 Live Demo
+## 2. Algorithm Explanation
+The scoring algorithm combines four key factors:
 
-👉 **Live Site:** https://e-commerce-mern-frontend-c6ge.onrender.com/
+### Urgency
+Overdue tasks receive the highest boost. Tasks due in the next few days also get significant weight.
+Urgency is weighted more than effort because deadlines impose strict constraints.
+
+
+
