@@ -57,7 +57,7 @@ Quick tasks (<2 hours) receive a small bonus. Very long tasks receive a small pe
 ### Dependencies
 Tasks that unblock other tasks receive additional points.
 
-#### Core Logic Snippet
+###### Core Logic Snippet
 
 ```python
 if overdue: score += 100
