@@ -48,7 +48,7 @@ frontend/index.html
 - POST /api/tasks/analyze/ - Analyze a list of tasks, calculate scores, sort them, and return explanations.
 - GET /api/tasks/suggest/ - Return the top 3 tasks with reasoning (Smart Balance scoring).
 
-  ---
+---
 
 ## 3. Algorithm Explanation
 The scoring algorithm combines four key factors:
