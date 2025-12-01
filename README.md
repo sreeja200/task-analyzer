@@ -35,7 +35,7 @@ python manage.py runserver
 ```
 
 ### Frontend
-
+Open:
 ```bash
 frontend/index.html
 ```
