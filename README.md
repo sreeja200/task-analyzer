@@ -4,8 +4,8 @@
 
 A lightweight task-prioritization system built using **Django + Vanilla JS**, scoring tasks based on urgency, importance, effort, and dependencies.
 
-🔗 **Frontend (Live):** https://task-analyzer-app.netlify.app/|
-🔗 **Backend (Live):** https://sreejagunnam.pythonanywhere.com/
+-🔗 **Frontend (Live):** https://task-analyzer-app.netlify.app/
+-🔗 **Backend (Live):** https://sreejagunnam.pythonanywhere.com/
 
 ---
 
