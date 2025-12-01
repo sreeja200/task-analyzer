@@ -76,3 +76,14 @@ Tasks are sorted by their final score in descending order.
 - Implemented validation for missing or invalid fields
 - Added circular dependency detection to avoid invalid task graphs
 - Kept the frontend minimal and easy to test
+
+---
+
+## 4. Time Breakdown
+- Backend Models & Views — 1 hrs
+- Scoring Algorithm — 45 min
+- Frontend UI + API Integration — 1 hrs
+- Deployment — 30 mins
+- Debugging & Cleanup — 30 min
+
+
