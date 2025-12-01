@@ -41,6 +41,8 @@ frontend/index.html
 ```
 ---
 
+## 2. 🔌API Endpoints
+
 ## 2. Algorithm Explanation
 The scoring algorithm combines four key factors:
 
