@@ -69,3 +69,10 @@ score += len(dependencies) * 3
 Tasks are sorted by their final score in descending order.
 
 ---
+
+## 3. Design Decisions
+- Gave higher weight to urgency for realistic prioritization
+- Added simple explanations for each score
+- Implemented validation for missing or invalid fields
+- Added circular dependency detection to avoid invalid task graphs
+- Kept the frontend minimal and easy to test
